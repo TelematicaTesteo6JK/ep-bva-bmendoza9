@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Testing</title>
+
+    <style>
+      table, th, td {
+      border: 2px solid black;
+      margin-bottom: 50px;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <script src="libreria.js" charset="utf-8"></script>
+    
+    <!--EP testing table-->
+    <table>
+
+      <th>EP testing</th>
+      <!--titles-->
+      <tr>
+        <td>Test data</td>
+        <td>Expected result</td>
+        <td>Actual result</td>
+        <td>Pass/fail</td>
+      </tr>
+      <!--value 1-->
+      <tr>
+        <td id="test1"></td><td>false</td><td id="res1">></td><td>Pass</td>
+      </tr>
+      <!--value 2-->
+      <tr>
+        <td id="test2"></td><td>true</td><td id="res2"></td><td>Pass</td>
+      </tr>
+      <!--value 3-->
+      <tr>
+        <td id="test3"></td><td>false</td><td id="res3"></td><td>Pass</td>
+      </tr>
+
+    </table>
+    <!--BVA testing table-->
+    <table>
+
+        <th>BVA testing</th>
+        <!--titles-->
+        <tr>
+          <td>Test data</td>
+          <td>Expected result</td>
+          <td>Actual result</td>
+          <td>Pass/fail</td>
+        </tr>
+        <!--value 4-->
+        <tr>
+          <td id="test4"></td><td>false</td><td id="res4"></td><td>Pass</td>
+        </tr>
+        <!--value 5-->
+        <tr>
+          <td id="test5"></td><td>true</td><td id="res5"></td><td>Pass</td>
+        </tr>
+        <!--value 6-->
+        <tr>
+          <td id="test6"></td><td>true</td><td id="res6"></td><td>Pass</td>
+        </tr>
+        <!--value 7--> 
+        <tr>
+          <td id="test7"></td><td>false</td><td id="res7"></td><td>Pass</td>
+        </tr>
+  
+      </table>
+
+    <script type="text/javascript">
+
+      var test1 ="Bruno";
+      document.getElementById("test1").innerHTML = test1;
+      var test2 ="Gabriel";
+      document.getElementById("test2").innerHTML = test2;
+      var test3 ="1234567890123456789012345678901";
+      document.getElementById("test3").innerHTML = test3;
+
+      var test4 ="five5";
+      document.getElementById("test4").innerHTML = test4;
+      var test5 ="sixnum";
+      document.getElementById("test5").innerHTML = test5;
+      var test6 ="123456789012345678901234567890";
+      document.getElementById("test6").innerHTML = test6;
+      var test7 ="1234567890123456789012345678901";
+      document.getElementById("test7").innerHTML = test7;
+
+      let res1 = validarNombre(test1);
+      document.getElementById("res1").innerHTML = res1;
+      let res2 = validarNombre(test2);
+      document.getElementById("res2").innerHTML = res2;
+      let res3 = validarNombre(test3);
+      document.getElementById("res3").innerHTML = res3;
+      //console.log("prueba 1 EP",res," prueba 2 EP",res2," prueba 3 EP", res3);
+
+      let res4 = validarNombre(test4);
+      document.getElementById("res4").innerHTML = res4;
+      let res5 = validarNombre(test5);
+      document.getElementById("res5").innerHTML = res5;
+      let res6 = validarNombre(test6);
+      document.getElementById("res6").innerHTML = res6;
+      let res7 = validarNombre(test7);
+      document.getElementById("res7").innerHTML = res7;
+
+    </script>
+  </body>
+</html>

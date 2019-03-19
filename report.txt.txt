@@ -1,0 +1,12 @@
+EP testing
+Test data 	Expected result 	Actual result 	Pass/fail
+Bruno	false	false	Pass
+Gabriel	true	true	Pass
+1234567890123456789012345678901	false	false	Pass
+
+BVA testing
+Test data 	Expected result 	Actual result 	Pass/fail
+five5	false	false	Pass
+sixnum	true	true	Pass
+123456789012345678901234567890	true	true	Pass
+1234567890123456789012345678901	false	false	Pass
